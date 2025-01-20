@@ -2,7 +2,13 @@
 @model MyApp.Namespace.RazorModel
 @{
     ViewData["Title"] = "Razor";
+
+    // Dagens datum och klockslag
+    var date = DateTime.Now;
 }
 
 <h1>Razor</h1>
+
+<p><strong>Information</strong></p>
+<p><strong>Datum/klockslag:</strong> @date.ToString("yyyy-MM-dd HH:mm:ss")</p>
 
