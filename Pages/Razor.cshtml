@@ -7,11 +7,26 @@
     var date = DateTime.Now;
     // Kontroll om det är fredag
     bool isFriday = date.DayOfWeek == DayOfWeek.Friday;
+
+    // Lista över kurser jag läst hittills
+    var courses = new List<string>
+    {
+        "Datateknik GR (A), Introduktion till programmering i JavaScript - DT084G",
+        "Datateknik GR (A), Webbutveckling I - DT057G",
+        "Datateknik GR (A), Grafisk teknik för webb - DT200G",
+        "Datateknik GR (B), Webbanvändbarhet - DT068G",
+        "Datateknik GR (B), Frontend-baserad webbutveckling - DT211G",
+        "Datateknik GR (A), Databaser - DT003G",
+        "Datateknik GR (B), Programmering i TypeScript - DT208G",
+        "Datateknik GR (B), Backend-baserad webbutveckling - DT207G",
+        "Informatik GR (A), Projektledning - IK060G",
+        "Datateknik GR (A), Programmering i C#.NET - DT071G"
+    };
 }
 
 <h1>Razor</h1>
 
-<p><strong>Information</strong></p>
+<h4>Information</h4>
 <p><strong>Datum/klockslag:</strong> @date.ToString("yyyy-MM-dd HH:mm:ss")</p>
 
 @* ifsats för att kontrollera om dagens veckodag är fredag, visa meddelande beroende på resultat *@
@@ -23,3 +38,12 @@ else
 {
     <p>Idag är det inte fredag!</p>
 }
+
+@* Skriver ut kurserna i en ul-lista med en foreach loop *@
+<h4>Kurser jag läst</h4>
+<ul>
+    @foreach (var course in courses)
+    {
+        <li>@course</li>
+    }
+</ul>
