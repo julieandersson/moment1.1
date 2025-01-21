@@ -96,3 +96,27 @@ p, ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000; 
 }
+
+@media (max-width: 600px) {
+  .popup {
+      padding: 50px;
+      width: 70%;
+      font-size: 1em;
+  }
+
+  body, footer {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+  
+  .date p {
+    font-size: 0.8em;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+  }
+}
