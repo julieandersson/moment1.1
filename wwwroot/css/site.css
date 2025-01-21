@@ -59,3 +59,21 @@ p, ul {
   border-radius: 5px;
   font-weight: bold;
 }
+
+/* Popup styling */
+.popup {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #95bb72;
+  opacity: 95%;
+  color: black;
+  font-size: 1.1em;
+  padding: 80px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+}

@@ -19,6 +19,9 @@
     <li><strong>Om sidan:</strong> Information om mig som skapare av webbplatsen.</li>
 </ul>
 
-<a class="btn btn-primary" asp-page="/Razor">Utforska Razor-sidan</a>
-<a class="btn btn-primary" asp-page="/About">Läs mer om sidan</a>
+<a class="btn btn-primary" href="javascript:void(0);" onclick="navigateWithPopup('/Razor', 'Du navigeras nu till sidan om Razer...')">Utforska Razor-sidan</a>
+<a class="btn btn-primary" href="javascript:void(0);" onclick="navigateWithPopup('/About', 'Du navigeras nu till om-sidan...')">Läs mer om sidan</a>
+
+<!-- Popup -->
+<div id="popup" class="popup"></div>
 
