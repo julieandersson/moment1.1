@@ -24,9 +24,9 @@
     };
 }
 
-<h1>Razor</h1>
+<h1>Razor</h1><br>
 
-<h4>Information</h4>
+<h2>Information</h2>
 <p><strong>Datum/klockslag:</strong> @date.ToString("yyyy-MM-dd HH:mm:ss")</p>
 
 @* ifsats för att kontrollera om dagens veckodag är fredag, visa meddelande beroende på resultat *@
@@ -40,7 +40,7 @@ else
 }
 
 @* Skriver ut kurserna i en ul-lista med en foreach loop *@
-<h4>Kurser jag läst</h4>
+<h2>Kurser jag läst</h2>
 <ul>
     @foreach (var course in courses)
     {
