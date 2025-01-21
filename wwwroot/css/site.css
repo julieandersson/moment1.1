@@ -10,6 +10,19 @@ header, aside, footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+footer {
+  font-style: italic;
+}
+
+footer a {
+  color: #2e471f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
 aside {
   border-radius: 10px;
 }
@@ -31,7 +44,8 @@ p, ul {
 }
 
 .date p {
-  font-weight: bold;
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 :root {
@@ -58,6 +72,11 @@ p, ul {
   background-color: var(--primary) !important;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Popup styling */
