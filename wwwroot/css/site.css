@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   background-color: #ddead1;
   font-family: "Noto Sans", serif;
@@ -90,17 +91,19 @@ p, ul {
   opacity: 95%;
   color: black;
   font-size: 1.1em;
-  padding: 80px;
+  padding: 30px;
+  width: 50%;
+  max-width: 400px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .popup {
-      padding: 50px;
-      width: 70%;
+      padding: 20px;
+      width: 60%;
       font-size: 1em;
   }
 
@@ -111,12 +114,9 @@ p, ul {
   h1 {
     font-size: 1.7em;
   }
-  
-  .date p {
-    font-size: 0.8em;
-  }
 
   .btn-primary {
+    padding: 12px 20px;
     font-size: 1em;
   }
 }
