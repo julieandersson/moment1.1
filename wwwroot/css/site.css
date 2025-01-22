@@ -6,6 +6,12 @@ body {
   font-size: 1em;
 }
 
+header {
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header, aside, footer {
   background-color: #a5be8d;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
