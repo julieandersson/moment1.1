@@ -4,7 +4,8 @@
     ViewData["Title"] = "Start";
 }
 
-<h1>Start</h1><br>
+<h1>Start</h1>
+<br />
 
 <h2>Välkommen till Moment 1.1!</h2>
 <p>
@@ -15,13 +16,20 @@
 <h2>Vad du hittar här:</h2>
 <ul>
     <li><strong>Startsidan:</strong> Introduktion till webbplatsen.</li>
-    <li><strong>Razor-sidan:</strong> Dynamiskt innehåll skapat med Razor</li>
+    <li><strong>Razor-sidan:</strong> Dynamiskt innehåll skapat med Razor.</li>
     <li><strong>Om sidan:</strong> Information om mig som skapare av webbplatsen.</li>
 </ul>
 
-<a class="btn btn-primary" href="javascript:void(0);" onclick="navigateWithPopup('/Razor', 'Du navigeras nu till sidan om Razer...')">Utforska Razor-sidan</a>
-<a class="btn btn-primary" href="javascript:void(0);" onclick="navigateWithPopup('/About', 'Du navigeras nu till om-sidan...')">Läs mer om sidan</a>
+<a class="btn btn-primary" 
+   href="javascript:void(0);" 
+   onclick="navigateWithPopup('/Razor', 'Du navigeras nu till sidan om Razer...')">
+    Utforska Razor-sidan
+</a>
+<a class="btn btn-primary" 
+   href="javascript:void(0);" 
+   onclick="navigateWithPopup('/About', 'Du navigeras nu till om-sidan...')">
+    Läs mer om sidan
+</a>
 
 <!-- Popup -->
 <div id="popup" class="popup"></div>
-

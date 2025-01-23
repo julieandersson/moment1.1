@@ -5,6 +5,7 @@
 
     // Dagens datum och klockslag
     var date = DateTime.Now;
+    
     // Kontroll om det är fredag
     bool isFriday = date.DayOfWeek == DayOfWeek.Friday;
 
@@ -24,12 +25,13 @@
     };
 }
 
-<h1>Razor</h1><br>
+<h1>Razor</h1>
+<br />
 
 <h2>Information</h2>
 <p><strong>Datum/klockslag:</strong> @date.ToString("yyyy-MM-dd HH:mm:ss")</p>
 
-@* ifsats för att kontrollera om dagens veckodag är fredag, visa meddelande beroende på resultat *@
+@* Kontroll om det är fredag *@
 @if (isFriday)
 {
     <p>Idag är det fredag!</p>
@@ -39,7 +41,7 @@ else
     <p>Idag är det inte fredag!</p>
 }
 
-@* Skriver ut kurserna i en ul-lista med en foreach loop *@
+@* Skriver ut kurserna i en ul-lista med en foreach-loop *@
 <h2>Kurser jag läst</h2>
 <ul>
     @foreach (var course in courses)
